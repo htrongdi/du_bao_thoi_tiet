@@ -25,6 +25,7 @@
 }
 
 .search-icon {
+    cursor: pointer;
     margin-right: 5px;
     position: absolute;
     left: 0;
