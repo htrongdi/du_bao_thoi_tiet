@@ -24,6 +24,10 @@
     border-bottom: 1px solid white;
 }
 
+.microphone {
+    cursor: pointer;
+}
+
 .search-icon {
     cursor: pointer;
     margin-right: 5px;
@@ -40,11 +44,11 @@
     color: white;
 }
 
-#seacrh-input::placeholder{
-    color:rgb(206,206,206);
+#seacrh-input::placeholder {
+    color: rgb(206, 206, 206);
 }
 
-.info-wrapper{
+.info-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,35 +57,35 @@
     padding: 80px 50px;
 }
 
-.city-name{
+.city-name {
     font-size: 20px;
     margin-bottom: 3px;
 }
 
-.weather-state{
+.weather-state {
     font-size: 13px;
     text-transform: capitalize;
 }
 
-.weather-icon{
+.weather-icon {
     width: 70px;
     height: 70px;
 }
 
-.temperature{
+.temperature {
     font-size: 80px;
     font-weight: lighter;
     line-height: 1;
     position: relative;
 }
 
-.temperature::after{
+.temperature::after {
     content: 'o';
     position: absolute;
     font-size: 30px;
 }
 
-.additional-section{
+.additional-section {
     border-top: 1px solid white;
     display: flex;
     flex-direction: column;
@@ -90,17 +94,17 @@
     text-align: center;
 }
 
-.additional-section .row{
+.additional-section .row {
     margin-top: 5px;
     display: flex;
 }
 
-.additional-section .item{
+.additional-section .item {
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
-.additional-section .item .label{
+.additional-section .item .label {
     font-weight: bold;
 }
