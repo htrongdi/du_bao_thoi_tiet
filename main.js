@@ -76,20 +76,27 @@ const handleVoice = (text) => {
     searchInput.value = location;
     const changEvent = new Event("change");
     searchInput.dispatchEvent(changEvent);
+  } else if (handleText.includes("chó hồ")) {
+    let elem = document.querySelector(".container");
+    elem.className += "ho";
+    alert("Hồ yêu Nhung");
   }
 };
 
 microphone.addEventListener("click", (e) => {
   e.preventDefault();
   recognition.start();
+  microphone.classList.add("recording");
 });
 
 recognition.onspeechend = () => {
   recognition.stop();
+  microphone.classList.remove("recording");
 };
 
 recognition.onerror = (err) => {
   console.error(err);
+  microphone.classList.remove("recording");
 };
 
 recognition.onresult = (e) => {
